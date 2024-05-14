@@ -32,7 +32,6 @@ Dengan memperhatikan studi kasus yang telah dijabarkan, gambarkan struktur basis
 Merujuk pada struktur basisdata yang telah disusun, kembangkan entity classes yang representatif. Anda diperbolehkan untuk mendefinisikan mapping pada entity class (annotation) atau pada ```persistence.xml```. Pada presentasi, buktikan kesesuaian antara struktur basisdata dan entity classes yang anda kembangkan.
 
 ## Tugas 3. Display All (20 points)
-
 Dalam bekerja, simulator anda akan berinteraksi dengan pengguna melalui ```STDIN-STDOUT```. Interaksi dilakukan dengan membaca perintah yang diberikan pengguna, baris per baris. Simulator memberikan respon sesuai dengan perintah yang diberikan. Simulator akan berhenti bekerja bila diberi perintah ```---```.
 
 Pada tugas ini anda diminta untuk mengembangkan sebuah fitur untuk menampilkan seluruh data asrama (```dorms```) dan mahasiswa (```students```). Berikut adalah format perintah yang diberikan:

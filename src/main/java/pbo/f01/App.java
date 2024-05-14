@@ -11,7 +11,7 @@ public class App {
     private static EntityManager em;
 
     public static void main(String[] args) {
-        emf = Persistence.createEntityManagerFactory("DormStudentsPU");
+        emf = Persistence.createEntityManagerFactory("DormStudentsPU"); // Nama disesuaikan dengan persistence.xml
         em = emf.createEntityManager();
         
         Scanner scanner = new Scanner(System.in);
@@ -29,7 +29,7 @@ public class App {
                     addStudent(parts[1], parts[2], Integer.parseInt(parts[3]), parts[4]);
                     break;
                 case "dorm-add":
-                    	
+                    addDorm(parts[1], Integer.parseInt(parts[2]), parts[3]);
                     break;
                 case "assign":
                     assignStudent(parts[1], parts[2]);
