@@ -93,6 +93,9 @@ public class App {
         
         for (Dorm dorm : dorms) {
             System.out.println(dorm.getName() + "|" + dorm.getGender() + "|" + dorm.getCapacity() + "|" + dorm.getStudents().size());
+            
+            Collections.sort(dorm.getStudents(), Comparator.comparing(Student::getName));
+        
             for (Student student : dorm.getStudents()) {
                 System.out.println(student.getId() + "|" + student.getName() + "|" + student.getEntranceYear());
             }
