@@ -75,7 +75,7 @@ public class App {
             return;
         }
         if (!student.getGender().equals(dorm.getGender())) {
-            System.out.println("Student gender does not match dorm gender!");
+            // System.out.println("Student gender does not match dorm gender!");
             return;
         }
         if (dorm.getStudents().size() >= dorm.getCapacity()) {
