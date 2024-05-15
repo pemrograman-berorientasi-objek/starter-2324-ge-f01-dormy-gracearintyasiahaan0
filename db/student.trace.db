@@ -1,0 +1,12 @@
+2024-05-15 14:01:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DORM" not found (this database is empty); SQL statement:
+SELECT 1 FROM DORM [42104-212]
+2024-05-15 14:01:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Syntax error in SQL statement "CREATE TABLE DORM (ID BIGINT [*]IDENTITY NOT NULL, CAPACITY INTEGER, GENDER VARCHAR, NAME VARCHAR, PRIMARY KEY (ID))"; expected "ARRAY, INVISIBLE, VISIBLE, NOT, NULL, AS, DEFAULT, GENERATED, ON, NOT, NULL, AUTO_INCREMENT, DEFAULT, NULL_TO_DEFAULT, SEQUENCE, SELECTIVITY, COMMENT, CONSTRAINT, COMMENT, PRIMARY, UNIQUE, NOT, NULL, CHECK, REFERENCES, AUTO_INCREMENT, ,, )"; SQL statement:
+CREATE TABLE DORM (ID BIGINT IDENTITY NOT NULL, CAPACITY INTEGER, GENDER VARCHAR, NAME VARCHAR, PRIMARY KEY (ID)) [42001-212]
+2024-05-15 14:01:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "STUDENT" not found (this database is empty); SQL statement:
+SELECT 1 FROM STUDENT [42104-212]
+2024-05-15 14:01:44 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "DORM" not found; SQL statement:
+ALTER TABLE STUDENT ADD CONSTRAINT FK_STUDENT_dorm_id FOREIGN KEY (dorm_id) REFERENCES DORM (ID) [42102-212]

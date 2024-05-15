@@ -1,5 +1,7 @@
 package pbo.f01.model;
 
+import java.util.Set;
+
 import javax.persistence.*;
 
 @Entity
@@ -63,5 +65,10 @@ public class Student {
 
     public void setDorm(Dorm dorm) {
         this.dorm = dorm;
+    }
+
+    public Set<Student> getStudents() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'getStudents'");
     }
 }
