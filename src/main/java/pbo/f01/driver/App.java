@@ -79,7 +79,7 @@ public class App {
             return;
         }
         if (dorm.getStudents().size() >= dorm.getCapacity()) {
-            System.out.println("Dorm is already full!");
+            // System.out.println("Dorm is already full!");
             return;
         }
         student.setDorm(dorm);
