@@ -67,11 +67,11 @@ public class App {
         Student student = findStudentById(studentId);
         Dorm dorm = findDormByName(dormName);
         if (student == null) {
-            System.out.println("Student not found!");
+            // System.out.println("Student not found!");
             return;
         }
         if (dorm == null) {
-            System.out.println("Dorm not found!");
+            // System.out.println("Dorm not found!");
             return;
         }
         if (!student.getGender().equals(dorm.getGender())) {
